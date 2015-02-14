@@ -25,15 +25,15 @@ static WindowController *sharedInstance = nil;
 + (WindowController *) sharedController {
 	static dispatch_once_t dispatchOncePredicate = 0;
 	dispatch_once(&dispatchOncePredicate, ^{
-		sharedInstance = [[super allocWithZone:NULL] init];
+		sharedInstance = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"];
 	});
 	return sharedInstance;
 }
-
+/*
 + (id) allocWithZone:(NSZone *)zone {
 	//If coder misunderstands this is a singleton, behave properly with
 	// ref count +1 on alloc anyway, and still return singleton!
 	return [WindowController sharedController];
-}
+}*/
 
 @end

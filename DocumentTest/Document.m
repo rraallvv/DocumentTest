@@ -7,6 +7,7 @@
 //
 
 #import "Document.h"
+#import "WindowController.h"
 
 @interface Document ()
 
@@ -33,7 +34,7 @@
 
 - (void)makeWindowControllers {
 	// Override to return the Storyboard file name of the document.
-	[self addWindowController:[[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"]];
+	[self addWindowController:[WindowController sharedController]];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
