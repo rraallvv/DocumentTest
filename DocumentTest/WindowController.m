@@ -8,6 +8,8 @@
 
 #import "WindowController.h"
 
+static WindowController *sharedInstance = nil;
+
 @interface WindowController ()
 
 @end
@@ -18,6 +20,20 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
++ (WindowController *) sharedController {
+	static dispatch_once_t dispatchOncePredicate = 0;
+	dispatch_once(&dispatchOncePredicate, ^{
+		sharedInstance = [[super allocWithZone:NULL] init];
+	});
+	return sharedInstance;
+}
+
++ (id) allocWithZone:(NSZone *)zone {
+	//If coder misunderstands this is a singleton, behave properly with
+	// ref count +1 on alloc anyway, and still return singleton!
+	return [WindowController sharedController];
 }
 
 @end
