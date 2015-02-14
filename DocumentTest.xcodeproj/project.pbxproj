@@ -416,6 +416,7 @@
 				E41CBF6B1A8F9EDB0041908D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41CBF6C1A8F9EDB0041908D /* Build configuration list for PBXNativeTarget "DocumentTestTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				E41CBF6E1A8F9EDB0041908D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

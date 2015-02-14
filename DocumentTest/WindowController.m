@@ -36,4 +36,11 @@ static WindowController *sharedInstance = nil;
 	return [WindowController sharedController];
 }*/
 
+- (void)setDocument:(id)document {
+	[super setDocument:document];
+	if (document != nil && self.contentViewController != nil) {
+		self.contentViewController.representedObject = document;
+	}
+}
+
 @end

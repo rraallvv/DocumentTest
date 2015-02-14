@@ -51,7 +51,7 @@
 #endif
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
-	return YES;
+	return NO;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
