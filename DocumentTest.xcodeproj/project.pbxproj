@@ -14,6 +14,7 @@
 		E41CBF571A8F9EDB0041908D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41CBF561A8F9EDB0041908D /* Images.xcassets */; };
 		E41CBF5A1A8F9EDB0041908D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41CBF581A8F9EDB0041908D /* Main.storyboard */; };
 		E41CBF661A8F9EDB0041908D /* DocumentTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41CBF651A8F9EDB0041908D /* DocumentTestTests.m */; };
+		E41CBF791A8FA21E0041908D /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41CBF781A8FA21E0041908D /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		E41CBF5F1A8F9EDB0041908D /* DocumentTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41CBF641A8F9EDB0041908D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41CBF651A8F9EDB0041908D /* DocumentTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentTestTests.m; sourceTree = "<group>"; };
+		E41CBF771A8FA21E0041908D /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		E41CBF781A8FA21E0041908D /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				E41CBF4B1A8F9EDB0041908D /* AppDelegate.h */,
 				E41CBF4C1A8F9EDB0041908D /* AppDelegate.m */,
+				E41CBF771A8FA21E0041908D /* WindowController.h */,
+				E41CBF781A8FA21E0041908D /* WindowController.m */,
 				E41CBF501A8F9EDB0041908D /* ViewController.h */,
 				E41CBF511A8F9EDB0041908D /* ViewController.m */,
 				E41CBF531A8F9EDB0041908D /* Document.h */,
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41CBF791A8FA21E0041908D /* WindowController.m in Sources */,
 				E41CBF551A8F9EDB0041908D /* Document.m in Sources */,
 				E41CBF521A8F9EDB0041908D /* ViewController.m in Sources */,
 				E41CBF4F1A8F9EDB0041908D /* main.m in Sources */,
