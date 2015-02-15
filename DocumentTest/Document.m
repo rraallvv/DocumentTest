@@ -55,4 +55,9 @@
 	return YES;
 }
 
+- (void)close {
+	[self removeWindowController:WindowController.sharedController];
+	[super close];
+}
+
 @end
