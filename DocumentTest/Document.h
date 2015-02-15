@@ -10,6 +10,6 @@
 
 @interface Document : NSDocument
 
+@property NSString *string;
 
 @end
-
